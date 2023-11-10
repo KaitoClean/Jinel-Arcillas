@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <style>
+     
+     
+     
+     *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+        body {         
+            background-image: linear-gradient(rgba(3, 3, 3, 0.75), rgb(3, 3, 3)), url(abarai.gif);
+            background-size: cover;
+            background-position: center;
+            animation: gradientBG 15s infinite;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    .navbar{
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: azure;
+        text-transform: u;
+
+    }
+    .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0%;
+        background: #009688;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+        
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+
+    }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            border: 10px solid #ccc;
+        }
+
+        header {
+            text-align: center;
+            font-size: 38px;
+            font-family: 'Arial, Helvetica, sans-serif';
+            margin-top: 12px;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .contact-info {
+            float: left;
+            width: 50%;
+        }
+
+        h1, h2 {
+            text-align: left;
+            font-size: 20px;
+            font-family: 'Arial, Helvetica, sans-serif';
+            margin-top: 20px;
+            margin-left: 260px;
+            color: #fff;
+        }
+
+        p {
+            text-align: left;
+            font-size: 16px;
+            font-family: 'Arial, Helvetica, sans-serif';
+            margin-top: -10px;
+            margin-left: 275px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">   
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </div>
+
+    <header> Google Map </header>
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <center>
+                <iframe width="950" height="400" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.235828298767!2d123.9226975!3d10.323002599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9990f7c956199%3A0xd071937150e23990!2sMandaue%20Technical%20Institute!5e0!3m2!1sen!2sph!4v1699270909172!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </center>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

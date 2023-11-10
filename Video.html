@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Video Compilation</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+        <div class="container">
+        <h1>VIDEO GALLERY</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                <video src="senjumaru.mp4" width="100%" controls loop quality>            
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                    <video src="shinji.mp4" width="100%" controls loop quality>            
+                    </div>>
+                    </div>
+                    <p>Second Video</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</div>
+</body>
+</html>
+
+
+<style>
+
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: azure;
+    text-transform: u;
+
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+   background: #009688;
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   transition: 0.5s;
+   
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(3, 3, 3, 0.75), rgb(3, 3, 3)), url(stark.gif);
+    background-size: cover;
+    background-position: center;
+  
+}
+.container{
+    width: 80%;
+    margin: 80px auto;
+}
+.container h1{
+    padding: 60px;
+    color: #fff;
+    font-size: 44px;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col{
+    flex-basis: 50%;
+    min-width: 250px;
+}
+
+.feature-img{
+    width: 83%;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.small-img-row{
+    display: flex;
+    background: #efefef;
+    margin: 20px 0;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 85%;
+
+}
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
